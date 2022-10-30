@@ -1,0 +1,368 @@
+//connection
+string db = "Data Source=LAPTOP-VD1P25GN;User ID=ganesh;Password=ganesh";
+
+//sign,signup,forgot
+create table customer(UserName varchar(50),Email_ID varchar(50) primary key,Key varchar(50),Password varchar(50));
+
+
+create table Admin(UserName varchar(50),Email_ID varchar(50) primary key,Password varchar(50));
+insert into Admin values('Ganesh','Ganesh11@gmail.com','Ganesh11');
+
+
+// room
+
+create table Hotel(Hotel_id int primary key,Name varchar(50),Location varchar(50),Description varchar(500));
+
+create table Room(Room_id int,Hotel_id int,BHK int,Price number(20,2),DescriptionR varchar(500),foreign key(Hotel_id) references Hotel on delete cascade);
+
+insert into Hotel values(5,'Fortune','Manipal','Well-appointed rooms, a great dining spot, a banquet hall and a host of upscale amenities await you for a delightful stay at this luxurious property.Host an unforgettable social event or corporate gathering at the on-site banquet hall.Enjoy the property close proximity to Coimbatore Junction Railway Station which is 1.7 km away.Make use of high-speed Wi-Fi to stay connected with your loved ones.');
+
+insert into Room values(2,5,1,4000,'AC,well Cleaned');
+
+
+//book
+
+
+
+create table Book(Room_id int,HotelName varchar(50),price int,Email_ID varchar(50),status varchar(50),primary key(Room_id,Email_ID),foreign key(Email_ID) references Customer on delete cascade);
+
+
+
+
+//
+
+
+
+create table Book(Room_id int,HotelName varchar(50),price int,Email_ID varchar(50),status varchar(50),primary key(Room_id,Email_ID));
+insert into Book values(2,'Fortune', 6000, 'amanjha213@gmail.com', 'In Transit');
+insert into Book values(6,'Fortune', 8000, 'mohit13@gmail.com', 'In Transit');
+insert into Book values(8,'Fortune', 8000, 'rohit987@gmail.com', 'In Transit');
+insert into Book values(12,'Fortune', 10000, 'deep234@gmail.com', 'In Transit');
+insert into Book values(11,'Fortune', 6000, 'rajaryan@gmail.com', 'In Transit');
+insert into Book values(9,'Fortune', 10000, 'keshavkapoor8201@gmail.com', 'In Transit');
+insert into Book values(1,'Fortune', 6000, 'mohit13@gmail.com', 'In Transit');
+insert into Book values(7,'Fortune', 8000, 'jindalyash66@gmail.com', 'In Transit');
+insert into Book values(17,'Fortune', 8000, 'mohit13@gmail.com', 'In Transit');
+insert into Book values(4,'Fortune', 10000, 'amanjha213@gmail.com', 'In Transit');
+insert into Book values(19,'Fortune', 10000, 'jindalyash77@gmail.com', 'In Transit');
+insert into Book values(10,'Fortune', 8000, 'Ganesh1144555@gmail.com', 'In Transit');
+insert into Book values(3,'Fortune', 6000, 'rohit987@gmail.com', 'In Transit');
+insert into Book values(5,'Fortune', 6000, 'deep234@gmail.com', 'In Transit');
+insert into Book values(7,'Fortune', 10500, 'deep234@gmail.com', 'In Transit');
+
+//admin_control
+
+create table Admin_control(Email_ID varchar(50),hotelcount int,admincount int,foreign key(Email_ID) references Admin on delete cascade);
+
+insert into Admin_control values('Ga',10,10);
+update Admin_control set hotelcount=0 where Email_id='Ga';
+
+
+1)procedure:
+update
+delete
+2)function
+sign up
+3)trigger
+stop_book
+insert/update/delete
+
+
+///forgotpassword form///////
+
+CREATE OR REPLACE PROCEDURE ADDADMIN (mail IN CHAR,pass IN CHAR,username IN CHAR,MAILU IN CHAR)
+IS
+BEGIN
+insert into Admin values(username,mail,pass);
+insert into Admin_control values(mail,10,10);
+update Admin_control set Admincount=Admincount-1 where Email_id=mailu;
+END ADDADMIN;
+/
+
+
+CREATE OR REPLACE PROCEDURE ADDHOTEL (hotel IN INT,name IN CHAR,Location IN CHAR,despt IN CHAR,MAILU IN CHAR)
+IS
+BEGIN
+insert into Hotel values(hotel,name,location,despt);
+update Admin_control set Hotelcount=Hotelcount-1 where Email_id=mailu;
+END ADDHOTEL;
+/
+
+//execution is diff in vc# check new file 
+call FORGOTPASSWORD('deep234@gmail.com','malpe');
+
+
+CREATE OR REPLACE PROCEDURE FORGOTPASSWORD (mail IN CHAR,pass IN CHAR)
+IS
+BEGIN
+UPDATE Customer set password=pass where EMAIL_ID=mail;
+END FORGOTPASSWORD;
+/
+
+CREATE OR REPLACE PROCEDURE BOOKCONFIRM (mail IN CHAR,Room IN INT)
+IS
+BEGIN
+UPDATE BOOk set Status='Booking Confirmed' where EMAIL_ID=mail and Room_id=Room;
+END BOOKCONFIRM;
+/
+
+//delete 
+
+CREATE OR REPLACE PROCEDURE DELETECUSTOMER (mail IN CHAR)
+IS
+BEGIN
+DELETE FROM Customer where EMAIL_ID=mail;
+END DELETECUSTOMER;
+/
+
+CREATE OR REPLACE PROCEDURE DELETEBOOK (mail IN CHAR,ROOM IN NUMBER)
+IS
+BEGIN
+DELETE FROM BOOK where EMAIL_ID=mail and Room_id=ROOM;
+END DELETEBOOK;
+/
+
+CREATE OR REPLACE PROCEDURE DELETEHOTEL (HOTEL IN NUMBER)
+IS
+BEGIN
+DELETE FROM Hotel where Hotel_id=HOTEL;
+END DELETEHOTEL;
+/
+
+
+trigger::
+CREATE OR REPLACE TRIGGER STOP_BOOK 
+BEFORE insert on book
+for each row
+declare 
+v number;
+begin
+select count(*) into v from book;
+if v > 100 then
+ raise_application_error(-20000
+                , 'ALL ROOM BOOKED');
+end if;
+end;
+/
+
+create or replace trigger  book_table 
+
+after insert or delete or update on BOOK
+
+for each row
+
+begin
+
+if inserting then
+
+   DBMS_OUTPUT.PUT_LINE('inserting  with Room_ID: '|| :new.Room_id || ', Email_ID: ' || :new.Email_id);
+
+elsif deleting then
+
+   DBMS_OUTPUT.PUT_LINE('Deleting  with Room_ID: '|| :new.Room_id || ', Email_ID: ' || :new.Email_id);
+
+elsif updating then  
+
+   DBMS_OUTPUT.PUT_LINE('Updating  with Room_ID: '|| :new.Room_id || ', Email_ID: ' || :new.Email_id);
+
+end if;
+
+end;
+
+/
+
+create or replace trigger  customer_table 
+
+after insert or delete or update on customer
+
+for each row
+
+begin
+
+if inserting then
+
+   DBMS_OUTPUT.PUT_LINE('inserting with Email_ID: ' || :new.Email_id);
+
+elsif deleting then
+
+   DBMS_OUTPUT.PUT_LINE('Deleting with Email_ID: ' || :new.Email_id);
+
+elsif updating then  
+
+   DBMS_OUTPUT.PUT_LINE('Updating with Email_ID: ' || :new.Email_id);
+
+end if;
+
+end;
+
+/
+
+
+create or replace trigger  admin_table 
+
+after insert or delete or update on admin
+
+for each row
+
+begin
+
+if inserting then
+
+   DBMS_OUTPUT.PUT_LINE('inserting with Email_ID: ' || :new.Email_id);
+
+elsif deleting then
+
+   DBMS_OUTPUT.PUT_LINE('Deleting with Email_ID: ' || :new.Email_id);
+
+elsif updating then  
+
+   DBMS_OUTPUT.PUT_LINE('Updating with Email_ID: ' || :new.Email_id);
+
+end if;
+
+end;
+
+/
+
+create or replace trigger  hotel_table 
+
+after insert or delete or update on hotel
+
+for each row
+
+begin
+
+if inserting then
+
+   DBMS_OUTPUT.PUT_LINE('inserting with Hotel_ID: ' || :new.Hotel_id);
+
+elsif deleting then
+
+   DBMS_OUTPUT.PUT_LINE('Deleting with Hotel_ID: ' || :new.Hotel_id);
+
+elsif updating then  
+
+   DBMS_OUTPUT.PUT_LINE('Updating with Hotel_ID: ' || :new.Hotel_id);
+
+end if;
+
+end;
+
+/
+
+
+create or replace trigger  room_table 
+
+after insert or delete or update on room
+
+for each row
+
+begin
+
+if inserting then
+
+   DBMS_OUTPUT.PUT_LINE('inserting with Hotel_ID: ' || :new.Hotel_id || ', Room_ID: '|| :new.Room_id);
+
+elsif deleting then
+
+   DBMS_OUTPUT.PUT_LINE('Deleting with Hotel_ID: ' || :new.Hotel_id || ', Room_ID: '|| :new.Room_id);
+
+elsif updating then  
+
+   DBMS_OUTPUT.PUT_LINE('Updating with Hotel_ID: ' || :new.Hotel_id || ', Room_ID: '|| :new.Room_id);
+
+end if;
+
+end;
+
+/
+
+create or replace trigger  admincheck_table 
+
+after insert or delete or update on Admin_control
+
+for each row
+
+begin
+
+if inserting then
+
+   DBMS_OUTPUT.PUT_LINE('inserting with Email_ID: ' || :new.Email_id);
+
+elsif deleting then
+
+   DBMS_OUTPUT.PUT_LINE('Deleting with Email_ID: ' || :new.Email_id);
+
+elsif updating then  
+
+   DBMS_OUTPUT.PUT_LINE('Updating with Email_ID: ' || :new.Email_id);
+
+end if;
+
+end;
+
+/
+
+CREATE OR REPLACE TRIGGER STOP_AdminH 
+Before Update on Admin_control
+for each row
+declare 
+v number;
+begin
+v:=:old.HOTELCOUNT;
+if v < 1 then
+ raise_application_error(-20000
+                , 'You Have Crossed Max Limit');
+end if;
+end;
+/
+
+
+CREATE OR REPLACE TRIGGER STOP_AdminA 
+Before Update on Admin_control
+for each row
+declare 
+v number;
+begin
+v:=:old.ADMINCOUNT;
+if v < 1 then
+ raise_application_error(-20000
+                , 'You Have Crossed Max Limit');
+end if;
+end;
+/
+
+///function with cursor
+
+create or replace function
+signupcustomer (mail IN Char)
+return CHAR IS pass CHAR;
+cursor c1
+IS
+select Password from Customer where Email_ID=mail;
+BEGIN
+open c1;
+FETCH C1 INTO pass;
+if c1%notfound then
+pass:=0;
+end if;
+close c1;
+return pass;
+end;
+
+create or replace function
+signupadmin (mail IN Char)
+return CHAR IS pass CHAR;
+cursor c1
+IS
+select Password from Admin where Email_ID=mail;
+BEGIN
+open c1;
+FETCH C1 INTO pass;
+if c1%notfound then
+pass:=0;
+end if;
+close c1;
+return pass;
+end;
+

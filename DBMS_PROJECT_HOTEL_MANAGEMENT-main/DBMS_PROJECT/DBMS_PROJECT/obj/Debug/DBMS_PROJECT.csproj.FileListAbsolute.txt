@@ -1,0 +1,86 @@
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\DBMS_PROJECT.exe.config
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\DBMS_PROJECT.exe
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\DBMS_PROJECT.pdb
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Form1.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Properties.Resources.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Signin.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.GenerateResource.cache
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.exe
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.pdb
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.forgotpassword.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.signup.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.AssemblyReference.cache
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.CoreCompileInputs.cache
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.CopyComplete
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\System.Memory.dll
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\System.Buffers.dll
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.AdminDashboard.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.room_no.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.pay.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Transaction.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Dashboard.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Bookordashboardcs.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.adminchoose.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Addadmin.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Addhotel.resources
+C:\Users\Ganesh Nayak\Desktop\lab_project\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.trans.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\DBMS_PROJECT.exe.config
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\DBMS_PROJECT.exe
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\DBMS_PROJECT.pdb
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\System.Memory.dll
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\System.Buffers.dll
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.AssemblyReference.cache
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.SuggestedBindingRedirects.cache
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Addadmin.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Addhotel.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.adminchoose.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.AdminDashboard.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Bookordashboardcs.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Dashboard.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.forgotpassword.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Form1.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.pay.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Properties.Resources.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.room_no.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Signin.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.signup.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.trans.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Transaction.resources
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.GenerateResource.cache
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.CoreCompileInputs.cache
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.CopyComplete
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.exe
+C:\Users\dell\OneDrive\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.pdb
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\DBMS_PROJECT.exe.config
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\DBMS_PROJECT.exe
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\DBMS_PROJECT.pdb
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\Oracle.DataAccess.dll
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\System.Memory.dll
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\bin\Debug\System.Buffers.dll
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.AssemblyReference.cache
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Addadmin.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Addhotel.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.adminchoose.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.AdminDashboard.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Bookordashboardcs.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Dashboard.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.forgotpassword.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Form1.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.pay.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Properties.Resources.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.room_no.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Signin.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.signup.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.trans.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.Transaction.resources
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.GenerateResource.cache
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.CoreCompileInputs.cache
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.csproj.CopyComplete
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.exe
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.pdb
+C:\Users\Ganesh Nayak\Desktop\DBMS_PROJECT\DBMS_PROJECT\obj\Debug\DBMS_PROJECT.delete.resources
